@@ -21,7 +21,14 @@
     <p>Já me livrei da Maldição</p>
 
     <script>
-       
+        //pode usar apenas Number ao inves de Number.parseInt or parseFloat
+        //para converter para string vc usar o string(n-valor)
+       var n1 = Number.parseInt(window.prompt('Digite um numero'))
+       var n2 = Number.parseInt(window.prompt('digire outro numero'))
+       var s = n1 + n2
+       window.alert (`A soma entre ${n1} e ${n2} é igual a ${s}`)
+       // number + number para adição
+       // string + string para concatenação
     </script>
 
 </body>
