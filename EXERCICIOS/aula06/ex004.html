@@ -9,14 +9,7 @@
         body { 
             background-color: skyblue;
             color: purple;
-        }
-
-        p { 
             font-size: 1.5em;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-self: center;
         }
     </style>
 </head>
@@ -25,7 +18,9 @@
 
     <script>
         var nome = window.prompt('Seu nome')
-        document.write(`<p> seu nome tem ${nome.length} tantas letras</p> `)
+        document.write(`Olá ${nome} seu nome tem ${nome.length} tantas letras <br/>`) 
+        document.write(`seu nome em maiusculo é ${nome.toUpperCase()}<br/>`) 
+        document.write(`seu nome em minusculo é ${nome.toLowerCase()}`)
     </script>
 </body>
 </html>
