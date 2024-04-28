@@ -4,13 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+
+        body { 
+            background-color: skyblue;
+            color: purple;
+        }
+
+        p { 
+            font-size: 1.5em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-self: center;
+        }
+    </style>
 </head>
 <body>
     
 
     <script>
         var nome = window.prompt('Seu nome')
-        document.write(`seu nome tem ${nome.length} tantas letras`)
+        document.write(`<p> seu nome tem ${nome.length} tantas letras</p> `)
     </script>
 </body>
 </html>
