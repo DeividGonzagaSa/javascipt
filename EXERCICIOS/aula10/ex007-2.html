@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         
+        * { 
+            width: 100vw;
+            height: 100vh;
+        }
+
+        html, body {
+            background-color: black;
+            color: black;
+           
+        } 
+
+        div#bloco {
+            background-color: white;
+            width: 200px;
+            height: 200px;
+            font-size: 2em;
+            line-height: 200px;
+            text-align: center;
+            
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="bloco">
+        interaja...
+    </div>
+    
+    <script>
+        var b = window.document.getElementById('bloco')
+        b.addEventListener('click', clicar)
+        b.addEventListener('mouseenter', entrar)
+        b.addEventListener('mouseout', sair)
+
+        function clicar () { 
+            b.innerText = 'Clicou'
+            b.style.background = 'light-blue'
+            b.style.background = 'yellow'
+        }
+
+        function entrar () { 
+            b.innerText = 'Entrou'
+        }
+
+        function sair () { 
+            b.innerText = 'Saiu'
+            b.style.background = 'white'
+        }
+
+
+    </script>
+</body>
+</html>
