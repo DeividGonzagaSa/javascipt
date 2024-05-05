@@ -5,38 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-         
+
         * { 
-            width: 100vw;
-            height: 100vh;
+            margin: 0px;
+            padding: 0pxw;
         }
 
         html, body {
             background-color: black;
             color: black;
+            width: 100vw;
+            height: 100vh;
            
         } 
 
+
+
         div#bloco {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+
             background-color: white;
             width: 200px;
             height: 200px;
             font-size: 2em;
             line-height: 200px;
             text-align: center;
-            
-            display: flex;
-            flex-direction: row;
-            text-align: center;
-            justify-content: center;
         }
     </style>
 </head>
 <body>
+
     <div id="bloco">
         interaja...
     </div>
-    
+  
     <script>
         var b = window.document.getElementById('bloco')
         b.addEventListener('click', clicar)
